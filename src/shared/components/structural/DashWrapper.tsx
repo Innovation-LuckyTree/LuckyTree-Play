@@ -10,13 +10,14 @@ import { getPageTitle } from "../../../utils/helpers"
 // THis containains basic Layout for dashboard as well as AuthGuard for it.
 export const DashWrapper: FC = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
+  // const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const location = useLocation();
   
   //  Auth check before rendering the layout
-  if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
-  }
+  // COMMENTED FOR DEMO PURPOSES
+  // if (!isAuthenticated) {
+  //   return <Navigate to="/login" replace />;
+  // }
 
   return (
     <Layout className="w-screen h-screen overflow-hidden">

@@ -1,5 +1,4 @@
 import './App.css'
-import { LoginPage } from './pages/login/LoginPage'
 import { DashWrapper } from './shared/components/structural/DashWrapper'
 import { Route, Routes } from 'react-router-dom'
 import { ConfigProvider } from 'antd'
@@ -36,7 +35,7 @@ function App() {
       }}
     >
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
+        {/* <Route path="/login" element={<LoginPage />} /> */}
         <Route path="/" element={<DashWrapper />}>
           <Route path="/" element={<HomePage/>}/>
           <Route path="results" element={<ResultsPage/>}/>
